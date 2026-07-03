@@ -1,8 +1,8 @@
-PWD e:/Grade2/双模小论文/IEEE_TAES_orig-research
+PWD e:/Git克隆/Dual-Mode Propulsion
 INPUT d:/texlive/2025/texmf.cnf
 INPUT d:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT d:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT e:/Grade2/双模小论文/IEEE_TAES_orig-research/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex
+INPUT e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex
 OUTPUT Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.log
 INPUT ./IEEEtaes.cls
 INPUT IEEEtaes.cls
