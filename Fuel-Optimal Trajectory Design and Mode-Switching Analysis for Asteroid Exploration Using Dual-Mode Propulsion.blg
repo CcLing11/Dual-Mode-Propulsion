@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux
+The style file: IEEEtaes.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: dualmode_refs.bib
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 53 entries,
+            4063 wiz_defined-function locations,
+            1112 strings with 15066 characters,
+and the built_in function-call counts, 42703 in all, are:
+= -- 3465
+> -- 929
+< -- 440
++ -- 556
+- -- 146
+* -- 1917
+:= -- 6382
+add.period$ -- 106
+call.type$ -- 53
+change.case$ -- 53
+chr.to.int$ -- 948
+cite$ -- 53
+duplicate$ -- 3165
+empty$ -- 3154
+format.name$ -- 190
+if$ -- 9861
+int.to.chr$ -- 0
+int.to.str$ -- 53
+missing$ -- 482
+newline$ -- 235
+num.names$ -- 53
+pop$ -- 850
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 3513
+stack$ -- 0
+substring$ -- 2335
+swap$ -- 2707
+text.length$ -- 124
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 53
+warning$ -- 0
+while$ -- 194
+width$ -- 55
+write$ -- 623
