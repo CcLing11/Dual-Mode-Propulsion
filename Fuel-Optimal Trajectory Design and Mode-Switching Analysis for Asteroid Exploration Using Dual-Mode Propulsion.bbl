@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -23,312 +22,214 @@
 
 \bibitem{racca2003}
 G.~D. Racca
-\newblock  New challenges to trajectory design by the use of electric
-  propulsion and other new means of wandering in the solar system \newblock
-  \emph{Celestial Mechanics and Dynamical Astronomy}, vol.~85, no.~1, pp.
-  1--24, 2003.
+\newblock  New challenges to trajectory design by the use of electric propulsion and other new means of wandering in the solar system \newblock  \emph{Celestial Mechanics and Dynamical Astronomy}, vol.~85, no.~1, pp. 1--24, 2003.
 
 \bibitem{vasile2006}
 M.~Vasile and P.~P. De
-\newblock  Preliminary design of multiple gravity-assist trajectories \newblock
-   \emph{Journal of Spacecraft and Rockets}, vol.~43, no.~4, pp. 794--805,
-  2006.
+\newblock  Preliminary design of multiple gravity-assist trajectories \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~43, no.~4, pp. 794--805, 2006.
 
 \bibitem{azadmanesh2023}
 M.~Azadmanesh, J.~Roshanian, and M.~Hassanalian
-\newblock  On the importance of studying asteroids: A comprehensive review
-  \newblock  \emph{Progress in Aerospace Sciences}, vol. 142, p. 100957, 2023.
+\newblock  On the importance of studying asteroids: A comprehensive review \newblock  \emph{Progress in Aerospace Sciences}, vol. 142, p. 100957, 2023.
 
 \bibitem{russell2011}
 C.~T. Russell and C.~A. Raymond
-\newblock  The dawn mission to vesta and ceres \newblock  \emph{Space Science
-  Reviews}, vol. 163, no. 1-4, pp. 3--23, 2011.
+\newblock  The dawn mission to vesta and ceres \newblock  \emph{Space Science Reviews}, vol. 163, no. 1-4, pp. 3--23, 2011.
 
 \bibitem{buczkowski2016}
 D.~L. Buczkowski, B.~E. Schmidt, D.~A. Williams \emph{et~al.}
-\newblock  The geomorphology of ceres \newblock  \emph{Science}, vol. 353, no.
-  6303, p. aaf4332, 2016.
+\newblock  The geomorphology of ceres \newblock  \emph{Science}, vol. 353, no. 6303, p. aaf4332, 2016.
 
 \bibitem{jiang2012}
 F.~Jiang, H.~Baoyin, and J.~Li
-\newblock  Practical techniques for low-thrust trajectory optimization with
-  homotopic approach \newblock  \emph{Journal of Guidance, Control, and
-  Dynamics}, vol.~35, no.~1, pp. 245--258, 2012.
+\newblock  Practical techniques for low-thrust trajectory optimization with homotopic approach \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~35, no.~1, pp. 245--258, 2012.
 
 \bibitem{chi2022}
 Z.~Chi, Y.~Wang, and L.~Cheng
-\newblock  Indirect low-thrust trajectory optimization with gridded ion
-  thruster model \newblock  \emph{Proceedings of the Institution of Mechanical
-  Engineers, Part G: Journal of Aerospace Engineering}, vol. 236, no.~8, pp.
-  1678--1689, 2022.
+\newblock  Indirect low-thrust trajectory optimization with gridded ion thruster model \newblock  \emph{Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering}, vol. 236, no.~8, pp. 1678--1689, 2022.
 
 \bibitem{russell2007}
 R.~P. Russell
-\newblock  Primer vector theory applied to global low-thrust trade studies
-  \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~30, no.~2,
-  pp. 460--472, 2007.
+\newblock  Primer vector theory applied to global low-thrust trade studies \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~30, no.~2, pp. 460--472, 2007.
 
 \bibitem{rovey2020}
 J.~L. Rovey, C.~T. Lyne, A.~J. Mundahl \emph{et~al.}
-\newblock  Review of multimode space propulsion \newblock  \emph{Progress in
-  Aerospace Sciences}, vol. 118, p. 100627, 2020.
+\newblock  Review of multimode space propulsion \newblock  \emph{Progress in Aerospace Sciences}, vol. 118, p. 100627, 2020.
 
 \bibitem{taheri2020a}
 E.~Taheri, J.~L. Junkins, I.~Kolmanovsky \emph{et~al.}
-\newblock  A novel approach for optimal trajectory design with multiple
-  operation modes of propulsion system, part 1 \newblock  \emph{Acta
-  Astronautica}, vol. 172, pp. 151--165, 2020.
+\newblock  A novel approach for optimal trajectory design with multiple operation modes of propulsion system, part 1 \newblock  \emph{Acta Astronautica}, vol. 172, pp. 151--165, 2020.
 
 \bibitem{cline2024a}
 B.~C. Cline, A.~Pascarella, R.~M. Woollands \emph{et~al.}
-\newblock  Indirect optimal control techniques for multimode propulsion mission
-  design \newblock  \emph{Acta Astronautica}, vol. 223, pp. 759--776, 2024.
+\newblock  Indirect optimal control techniques for multimode propulsion mission design \newblock  \emph{Acta Astronautica}, vol. 223, pp. 759--776, 2024.
 
 \bibitem{cline2024b}
 B.~C. Cline, K.~I. Parker, J.~J. Rosales \emph{et~al.}
-\newblock  Lunar smallsat missions with chemical-electrospray multimode
-  propulsion \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~61, pp.
-  1287--1302, 2024.
+\newblock  Lunar smallsat missions with chemical-electrospray multimode propulsion \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~61, pp. 1287--1302, 2024.
 
 \bibitem{huang2026}
 R.~Huang, D.~Wu, X.~Liu \emph{et~al.}
-\newblock  Low-thrust fuel-optimal trajectory optimization of multi-mode
-  propulsion in tianqin constellation \newblock  \emph{Acta Astronautica}, vol.
-  238, pp. 271--284, 2026.
+\newblock  Low-thrust fuel-optimal trajectory optimization of multi-mode propulsion in tianqin constellation \newblock  \emph{Acta Astronautica}, vol. 238, pp. 271--284, 2026.
 
 \bibitem{falcone2025}
 G.~Falcone, D.~Engel, M.~Cortinovis \emph{et~al.}
-\newblock  Single, hybrid, and multimode propulsion for on-orbit servicing
-  \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~62, pp. 1460--1478,
-  2025.
+\newblock  Single, hybrid, and multimode propulsion for on-orbit servicing \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~62, pp. 1460--1478, 2025.
 
 \bibitem{rayman2006}
 M.~D. Rayman, T.~C. Fraschetti, C.~A. Raymond \emph{et~al.}
-\newblock  Dawn: A mission in development for exploration of main belt
-  asteroids vesta and ceres \newblock  \emph{Acta Astronautica}, vol.~58, pp.
-  605--616, 2006.
+\newblock  Dawn: A mission in development for exploration of main belt asteroids vesta and ceres \newblock  \emph{Acta Astronautica}, vol.~58, pp. 605--616, 2006.
 
 \bibitem{dachwald2008}
 B.~Dachwald, W.~Seboldt, H.~W. Loeb \emph{et~al.}
-\newblock  Main belt asteroid sample return mission using solar electric
-  propulsion \newblock  \emph{Acta Astronautica}, vol.~63, no. 1-4, pp.
-  91--101, 2008.
+\newblock  Main belt asteroid sample return mission using solar electric propulsion \newblock  \emph{Acta Astronautica}, vol.~63, no. 1-4, pp. 91--101, 2008.
 
 \bibitem{morante2021}
 D.~Morante, R.~M. Sanjurjo, and M.~Soler
-\newblock  A survey on low-thrust trajectory optimization approaches \newblock
-  \emph{Aerospace}, vol.~8, pp. 1--19, 2021.
+\newblock  A survey on low-thrust trajectory optimization approaches \newblock  \emph{Aerospace}, vol.~8, pp. 1--19, 2021.
 
 \bibitem{betts1998}
 J.~T. Betts
-\newblock  Survey of numerical methods for trajectory optimization \newblock
-  \emph{Journal of Guidance, Control, and Dynamics}, vol.~21, pp. 193--207,
-  1998.
+\newblock  Survey of numerical methods for trajectory optimization \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~21, pp. 193--207, 1998.
 
 \bibitem{conway2012}
 B.~A. Conway
-\newblock  A survey of methods available for the numerical optimization of
-  continuous dynamic systems \newblock  \emph{Journal of Optimization Theory
-  and Applications}, vol. 152, pp. 271--306, 2012.
+\newblock  A survey of methods available for the numerical optimization of continuous dynamic systems \newblock  \emph{Journal of Optimization Theory and Applications}, vol. 152, pp. 271--306, 2012.
 
 \bibitem{shirazi2018}
 A.~Shirazi, J.~Ceberio, and J.~A. Lozano
-\newblock  Spacecraft trajectory optimization: a review of models, objectives,
-  approaches and solutions \newblock  \emph{Progress in Aerospace Sciences},
-  vol. 102, pp. 76--98, 2018.
+\newblock  Spacecraft trajectory optimization: a review of models, objectives, approaches and solutions \newblock  \emph{Progress in Aerospace Sciences}, vol. 102, pp. 76--98, 2018.
 
 \bibitem{walker1985}
 M.~J.~H. Walker, B.~Ireland, and J.~Owens
-\newblock  A set of modified equinoctial orbit elements \newblock
-  \emph{Celestial Mechanics}, vol.~36, pp. 409--419, 1985.
+\newblock  A set of modified equinoctial orbit elements \newblock  \emph{Celestial Mechanics}, vol.~36, pp. 409--419, 1985.
 
 \bibitem{junkins2019}
 J.~L. Junkins and E.~Taheri
-\newblock  Exploration of alternative state vector choices for low-thrust
-  trajectory optimization \newblock  \emph{Journal of Guidance, Control, and
-  Dynamics}, vol.~42, pp. 47--64, 2019.
+\newblock  Exploration of alternative state vector choices for low-thrust trajectory optimization \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~42, pp. 47--64, 2019.
 
 \bibitem{ottesen2024}
 D.~Ottesen and R.~P. Russell
-\newblock  Direct-to-indirect mapping for optimal low-thrust trajectories
-  \newblock  \emph{Astrodynamics}, vol.~8, pp. 27--46, 2024.
+\newblock  Direct-to-indirect mapping for optimal low-thrust trajectories \newblock  \emph{Astrodynamics}, vol.~8, pp. 27--46, 2024.
 
 \bibitem{pan2019}
 B.~Pan, X.~Pan, and Y.~Ma
-\newblock  A quadratic homotopy method for fuel-optimal low-thrust trajectory
-  design \newblock  \emph{Proceedings of the Institution of Mechanical
-  Engineers, Part G: Journal of Aerospace Engineering}, vol. 233, no.~5, pp.
-  1741--1757, 2019.
+\newblock  A quadratic homotopy method for fuel-optimal low-thrust trajectory design \newblock  \emph{Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering}, vol. 233, no.~5, pp. 1741--1757, 2019.
 
 \bibitem{taheri2016}
 E.~Taheri, I.~Kolmanovsky, and E.~Atkins
-\newblock  Enhanced smoothing technique for indirect optimization of
-  minimum-fuel low-thrust trajectories \newblock  \emph{Journal of Guidance,
-  Control, and Dynamics}, vol.~39, pp. 2500--2511, 2016.
+\newblock  Enhanced smoothing technique for indirect optimization of minimum-fuel low-thrust trajectories \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~39, pp. 2500--2511, 2016.
 
 \bibitem{taheri2018}
 E.~Taheri and J.~L. Junkins
-\newblock  Generic smoothing for optimal bang-off-bang spacecraft maneuvers
-  \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~41, pp.
-  2470--2475, 2018.
+\newblock  Generic smoothing for optimal bang-off-bang spacecraft maneuvers \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~41, pp. 2470--2475, 2018.
 
 \bibitem{taheri2020b}
 E.~Taheri, J.~L. Junkins, I.~Kolmanovsky \emph{et~al.}
-\newblock  A novel approach for optimal trajectory design with multiple
-  operation modes of propulsion system, part 2 \newblock  \emph{Acta
-  Astronautica}, vol. 172, pp. 166--179, 2020.
+\newblock  A novel approach for optimal trajectory design with multiple operation modes of propulsion system, part 2 \newblock  \emph{Acta Astronautica}, vol. 172, pp. 166--179, 2020.
 
 \bibitem{arya2021a}
 V.~Arya, E.~Taheri, and J.~L. Junkins
-\newblock  A composite framework for co-optimization of spacecraft trajectory
-  and propulsion system \newblock  \emph{Acta Astronautica}, vol. 178, pp.
-  773--782, 2021.
+\newblock  A composite framework for co-optimization of spacecraft trajectory and propulsion system \newblock  \emph{Acta Astronautica}, vol. 178, pp. 773--782, 2021.
 
 \bibitem{arya2021b}
 V.~Arya, E.~Taheri, and J.~L. Junkins
-\newblock  Low-thrust gravity-assist trajectory design using optimal multimode
-  propulsion models \newblock  \emph{Journal of Guidance, Control, and
-  Dynamics}, vol.~44, pp. 1280--1294, 2021.
+\newblock  Low-thrust gravity-assist trajectory design using optimal multimode propulsion models \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~44, pp. 1280--1294, 2021.
 
 \bibitem{chi2018}
 Z.~Chi, H.~Li, F.~Jiang \emph{et~al.}
-\newblock  Power-limited low-thrust trajectory optimization with operation
-  point detection \newblock  \emph{Astrophysics and Space Science}, vol. 363,
-  p. 122, 2018.
+\newblock  Power-limited low-thrust trajectory optimization with operation point detection \newblock  \emph{Astrophysics and Space Science}, vol. 363, p. 122, 2018.
 
 \bibitem{li2019}
 T.~Li, Z.~Wang, and Y.~Zhang
-\newblock  Double-homotopy technique for fuel optimization of power-limited
-  interplanetary trajectories \newblock  \emph{Astrophysics and Space Science},
-  vol. 364, p. 144, 2019.
+\newblock  Double-homotopy technique for fuel optimization of power-limited interplanetary trajectories \newblock  \emph{Astrophysics and Space Science}, vol. 364, p. 144, 2019.
 
 \bibitem{woollands2020}
 R.~Woollands, E.~Taheri, and J.~L. Junkins
-\newblock  Efficient computation of optimal low-thrust gravity perturbed orbit
-  transfers \newblock  \emph{Journal of the Astronautical Sciences}, vol.~67,
-  pp. 458--484, 2020.
+\newblock  Efficient computation of optimal low-thrust gravity perturbed orbit transfers \newblock  \emph{Journal of the Astronautical Sciences}, vol.~67, pp. 458--484, 2020.
 
 \bibitem{yam2013}
 C.~Yam, D.~Lorenzo, and D.~Izzo
-\newblock  Low-thrust trajectory design as a constrained global hybrid optimal
-  control problem \newblock  \emph{Journal of Guidance, Control, and Dynamics},
-  vol.~36, pp. 1410--1424, 2013.
+\newblock  Low-thrust trajectory design as a constrained global hybrid optimal control problem \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~36, pp. 1410--1424, 2013.
 
 \bibitem{englander2017}
 J.~A. Englander and B.~A. Conway
-\newblock  Automated solution of the low-thrust interplanetary trajectory
-  problem \newblock  \emph{Journal of Guidance, Control, and Dynamics},
-  vol.~40, pp. 15--27, 2017.
+\newblock  Automated solution of the low-thrust interplanetary trajectory problem \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~40, pp. 15--27, 2017.
 
 \bibitem{sun2016}
 C.~Sun, J.~P. Yuan, and Q.~Fang
-\newblock  Continuous low thrust trajectory optimization for preliminary design
-  \newblock  \emph{Proceedings of the Institution of Mechanical Engineers, Part
-  G: Journal of Aerospace Engineering}, vol. 230, no.~5, pp. 921--933, 2016.
+\newblock  Continuous low thrust trajectory optimization for preliminary design \newblock  \emph{Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering}, vol. 230, no.~5, pp. 921--933, 2016.
 
 \bibitem{kluever2014}
 C.~A. Kluever
-\newblock  Efficient computation of optimal interplanetary trajectories using
-  solar electric propulsion \newblock  \emph{Journal of Guidance, Control, and
-  Dynamics}, vol.~38, pp. 821--830, 2014.
+\newblock  Efficient computation of optimal interplanetary trajectories using solar electric propulsion \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~38, pp. 821--830, 2014.
 
 \bibitem{mengali2008}
 G.~Mengali and A.~A. Quarta
-\newblock  Optimal trade studies of interplanetary electric propulsion missions
-  \newblock  \emph{Acta Astronautica}, vol.~62, pp. 657--667, 2008.
+\newblock  Optimal trade studies of interplanetary electric propulsion missions \newblock  \emph{Acta Astronautica}, vol.~62, pp. 657--667, 2008.
 
 \bibitem{quarta2011}
 A.~A. Quarta and G.~Mengali
-\newblock  Minimum-time space missions with solar electric propulsion \newblock
-   \emph{Aerospace Science and Technology}, vol.~15, pp. 381--392, 2011.
+\newblock  Minimum-time space missions with solar electric propulsion \newblock  \emph{Aerospace Science and Technology}, vol.~15, pp. 381--392, 2011.
 
 \bibitem{nah2001}
 R.~Nah, S.~Vadali, and E.~Braden
-\newblock  Fuel-optimal, low-thrust, three-dimensional earth-mars trajectories
-  \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~24, pp.
-  1100--1107, 2001.
+\newblock  Fuel-optimal, low-thrust, three-dimensional earth-mars trajectories \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~24, pp. 1100--1107, 2001.
 
 \bibitem{kluever1995}
 C.~A. Kluever
-\newblock  Spacecraft optimization with combined chemical-electric propulsion
-  \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~32, pp. 378--380,
-  1995.
+\newblock  Spacecraft optimization with combined chemical-electric propulsion \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~32, pp. 378--380, 1995.
 
 \bibitem{kluever1997}
 C.~A. Kluever
-\newblock  Optimal earth-moon trajectories using combined chemical-electric
-  propulsion \newblock  \emph{Journal of Guidance, Control, and Dynamics},
-  vol.~20, pp. 253--258, 1997.
+\newblock  Optimal earth-moon trajectories using combined chemical-electric propulsion \newblock  \emph{Journal of Guidance, Control, and Dynamics}, vol.~20, pp. 253--258, 1997.
 
 \bibitem{kluever2012}
 C.~A. Kluever
-\newblock  Optimal geostationary orbit transfers using onboard
-  chemical-electric propulsion \newblock  \emph{Journal of Spacecraft and
-  Rockets}, vol.~49, pp. 1174--1182, 2012.
+\newblock  Optimal geostationary orbit transfers using onboard chemical-electric propulsion \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~49, pp. 1174--1182, 2012.
 
 \bibitem{oleson1997}
 S.~R. Oleson, R.~M. Myers, C.~A. Kluever \emph{et~al.}
-\newblock  Advanced propulsion for geostationary orbit insertion and
-  north-south station keeping \newblock  \emph{Journal of Spacecraft and
-  Rockets}, vol.~34, pp. 22--28, 1997.
+\newblock  Advanced propulsion for geostationary orbit insertion and north-south station keeping \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~34, pp. 22--28, 1997.
 
 \bibitem{mailhe2002}
 L.~M. Mailhe and S.~D. Heister
-\newblock  Design of a hybrid chemical/electric propulsion orbital transfer
-  vehicle \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~39, pp.
-  131--139, 2002.
+\newblock  Design of a hybrid chemical/electric propulsion orbital transfer vehicle \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~39, pp. 131--139, 2002.
 
 \bibitem{oh2004}
 D.~Y. Oh, T.~Randolph, S.~Kimbrel \emph{et~al.}
-\newblock  End-to-end optimization of chemical-electric orbit-raising missions
-  \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~41, pp. 831--839,
-  2004.
+\newblock  End-to-end optimization of chemical-electric orbit-raising missions \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~41, pp. 831--839, 2004.
 
 \bibitem{herman2014}
 J.~F.~C. Herman, A.~K. Zimmer, J.~P.~J. Reijneveld \emph{et~al.}
-\newblock  Human exploration of near earth asteroids: Mission analysis for
-  chemical and electric propulsion \newblock  \emph{Acta Astronautica}, vol.
-  104, no.~1, pp. 313--323, 2014.
+\newblock  Human exploration of near earth asteroids: Mission analysis for chemical and electric propulsion \newblock  \emph{Acta Astronautica}, vol. 104, no.~1, pp. 313--323, 2014.
 
 \bibitem{quarta2024}
 A.~A. Quarta
-\newblock  Thrust model and trajectory design of an interplanetary cubesat with
-  a hybrid propulsion system \newblock  \emph{Actuators}, vol.~13, no.~10, p.
-  384, 2024.
+\newblock  Thrust model and trajectory design of an interplanetary cubesat with a hybrid propulsion system \newblock  \emph{Actuators}, vol.~13, no.~10, p. 384, 2024.
 
 \bibitem{gagne2018}
 K.~R. Gagne, M.~R. McDevitt, and D.~L. Hitt
-\newblock  A dual mode propulsion system for small satellite applications
-  \newblock  \emph{Aerospace}, vol.~5, no.~2, p.~52, 2018.
+\newblock  A dual mode propulsion system for small satellite applications \newblock  \emph{Aerospace}, vol.~5, no.~2, p.~52, 2018.
 
 \bibitem{berg2017}
 S.~P. Berg and J.~L. Rovey
-\newblock  Assessment of multimode spacecraft micropropulsion systems \newblock
-   \emph{Journal of Spacecraft and Rockets}, vol.~54, no.~3, pp. 592--601,
-  2017.
+\newblock  Assessment of multimode spacecraft micropropulsion systems \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~54, no.~3, pp. 592--601, 2017.
 
 \bibitem{koizumi2016}
 H.~Koizumi, H.~Kawahara, K.~Yaginuma \emph{et~al.}
-\newblock  Initial flight operations of the miniature propulsion system
-  installed on small space probe: Procyon \newblock  \emph{Transactions of the
-  Japan Society for Aeronautical and Space Sciences, Aerospace Technology
-  Japan}, vol.~14, no. ists30, pp. Pb\_13--Pb\_22, 2016.
+\newblock  Initial flight operations of the miniature propulsion system installed on small space probe: Procyon \newblock  \emph{Transactions of the Japan Society for Aeronautical and Space Sciences, Aerospace Technology Japan}, vol.~14, no. ists30, pp. Pb\_13--Pb\_22, 2016.
 
 \bibitem{mani2019}
 K.~V. Mani, A.~Cervone, and F.~Topputo
-\newblock  Combined chemical-electric propulsion for a stand-alone mars cubesat
-  \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~56, no.~6, pp.
-  1816--1830, 2019.
+\newblock  Combined chemical-electric propulsion for a stand-alone mars cubesat \newblock  \emph{Journal of Spacecraft and Rockets}, vol.~56, no.~6, pp. 1816--1830, 2019.
 
 \bibitem{quarta2025}
 A.~A. Quarta, M.~Bassetto, and G.~Becatti
-\newblock  Optimal heliocentric orbit raising of cubesats with a monopropellant
-  electrospray multimode propulsion system \newblock  \emph{Applied Sciences},
-  vol.~15, no.~16, p. 9169, 2025.
+\newblock  Optimal heliocentric orbit raising of cubesats with a monopropellant electrospray multimode propulsion system \newblock  \emph{Applied Sciences}, vol.~15, no.~16, p. 9169, 2025.
 
 \bibitem{alnaqbi2024}
 S.~Alnaqbi, D.~Darfilal, and S.~S.~M. Swei
-\newblock  Propulsion technologies for cubesats: Review \newblock
-  \emph{Aerospace}, vol.~11, no.~7, p. 502, 2024.
+\newblock  Propulsion technologies for cubesats: Review \newblock  \emph{Aerospace}, vol.~11, no.~7, p. 502, 2024.
 
 \end{thebibliography}

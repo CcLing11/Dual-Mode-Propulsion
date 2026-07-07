@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.21)  3 JUL 2026 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.21)  7 JUL 2026 10:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -437,9 +437,6 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 
-Underfull \vbox (badness 2591) has occurred while \output is active []
-
-
 
 [1
 
@@ -523,9 +520,6 @@ File: pdf_figures/fig_02b_trajectory_xy_aa_0p90_mf_1209p719.pdf Graphic file (ty
 Package pdftex.def Info: pdf_figures/fig_02b_trajectory_xy_aa_0p90_mf_1209p719.pdf  used on input line 367.
 (pdftex.def)             Requested size: 236.1579pt x 170.73302pt.
 
-Underfull \vbox (badness 5893) has occurred while \output is active []
-
-
 
 <pdf_figures/fig3_2_mode_switching.pdf, id=252, 705.63625pt x 580.1675pt>
 File: pdf_figures/fig3_2_mode_switching.pdf Graphic file (type pdf)
@@ -558,6 +552,9 @@ Underfull \vbox (badness 5607) has occurred while \output is active []
 
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [8 <./pdf_figures/fig_02b_trajectory_xy_aa_0p60_mf_0784p651.pdf> <./pdf_figures/fig_02b_trajectory_xy_aa_0p75_mf_1013p061.pdf> <./pdf_figures/fig_02b_trajectory_xy_aa_0p90_mf_1209p719.pdf>]
 
@@ -582,6 +579,9 @@ File: pdf_figures/fig3_8_mode_fractions.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdf_figures/fig3_8_mode_fractions.pdf  used on input line 465.
 (pdftex.def)             Requested size: 235.19897pt x 172.79816pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [9 <./pdf_figures/fig3_2_mode_switching.pdf> <./pdf_figures/fig3_3_mode_time_mass.pdf>]
 <pdf_figures/fig3_9_mass_gain_boundary.pdf, id=490, 737.75626pt x 526.96875pt>
@@ -589,9 +589,6 @@ File: pdf_figures/fig3_9_mass_gain_boundary.pdf Graphic file (type pdf)
 <use pdf_figures/fig3_9_mass_gain_boundary.pdf>
 Package pdftex.def Info: pdf_figures/fig3_9_mass_gain_boundary.pdf  used on input line 477.
 (pdftex.def)             Requested size: 235.19897pt x 167.9982pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 <pdf_figures/fig3_10_threshold_curves.pdf, id=491, 677.53125pt x 466.74374pt>
@@ -605,6 +602,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [10 <./pdf_figures/fig3_4a_elements_aei.pdf>]
+Underfull \vbox (badness 2635) has occurred while \output is active []
+
+
+
 <pdf_figures/fig3_11_gain_vs_fraction.pdf, id=633, 677.53125pt x 465.74pt>
 File: pdf_figures/fig3_11_gain_vs_fraction.pdf Graphic file (type pdf)
 <use pdf_figures/fig3_11_gain_vs_fraction.pdf>
@@ -615,8 +616,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-
-
 [11 <./pdf_figures/fig3_4b_elements_angles.pdf> <./pdf_figures/fig3_5_remaining_mass.pdf> <./pdf_figures/fig3_6_gain_vs_low_thrust.pdf>]
 <pdf_figures/fig3_12_gain_efficiency.pdf, id=812, 737.75626pt x 526.96875pt>
 File: pdf_figures/fig3_12_gain_efficiency.pdf Graphic file (type pdf)
@@ -624,9 +623,9 @@ File: pdf_figures/fig3_12_gain_efficiency.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdf_figures/fig3_12_gain_efficiency.pdf  used on input line 504.
 (pdftex.def)             Requested size: 235.19897pt x 167.9982pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 3179) has occurred while \output is active []
 
 
 
@@ -645,11 +644,14 @@ Underfull \hbox (badness 1590) in paragraph at lines 528--529
 (./Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl
 
 [13 <./pdf_figures/fig3_12_gain_efficiency.pdf>]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+
 
 
 
 [14]
-Underfull \hbox (badness 6592) in paragraph at lines 253--254
+Underfull \hbox (badness 6592) in paragraph at lines 181--181
 []\OT1/ptm/m/n/8 Spacecraft op-ti-miza-tion with com-bined chemical-electric
  []
 
@@ -668,13 +670,13 @@ Package rerunfilecheck Info: File `"Fuel-Optimal Trajectory Design and Mode-Swit
 Here is how much of TeX's memory you used:
  11076 strings out of 473190
  178552 string characters out of 5719978
- 593147 words of memory out of 5000000
+ 594147 words of memory out of 5000000
  34039 multiletter control sequences out of 15000+600000
  599395 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,13n,93p,2264b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,93p,2270b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.pdf" (15 pages, 3108159 bytes).
+Output written on "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.pdf" (15 pages, 3108567 bytes).
 PDF statistics:
  1217 PDF objects out of 1440 (max. 8388607)
  1032 compressed objects within 11 object streams

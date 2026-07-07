@@ -1,17 +1,17 @@
 # Fdb version 4
-["bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"] 1783088140.98802 "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783088235.14222 0
+["bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"] 1783392246.59685 "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783392249.87565 0
   "./IEEEtaes.bst" 1783083713 59902 bcd815dd2f4c44fdd8e6ec030db5c34b ""
   "./dualmode_refs.bib" 1783083713 16608 178fa35114807084ea5f4b062e6bef50 ""
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783088234 9943 a17e2b26633831a312a2176a0369a6f6 "pdflatex"
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783392248 9944 4664b93156b78aaedbe1ab201fae06e3 "pdflatex"
   (generated)
   "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl"
   "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.blg"
   (rewritten before read)
-["pdflatex"] 1783088232.45652 "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.pdf" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783088235.14292 0
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783088234 9943 a17e2b26633831a312a2176a0369a6f6 "pdflatex"
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" 1783088141 13238 5b5023af1db8971b410d65929d56e5a9 "bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.out" 1783088234 2821 336427949566da3c383df696474040c4 "pdflatex"
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783088232 64435 e1bcb4667cdf7b1fc94631e370be26a6 ""
+["pdflatex"] 1783392247.12498 "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.pdf" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783392249.87638 0
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783392248 9944 4664b93156b78aaedbe1ab201fae06e3 "pdflatex"
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" 1783392247 13045 782d05a19f3a4a181c99abc76f35b9fa "bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.out" 1783392248 2821 336427949566da3c383df696474040c4 "pdflatex"
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783392090 64610 7fe8083a1499c9ba8bab4fb28ea5d791 ""
   "IEEEtaes.cls" 1783083713 217562 b25384c0a278e4bcd189df9d9606e2fb ""
   "d:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1761032477 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1761032697 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -138,7 +138,7 @@
   "d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1761034963 5512713 e2e6a6c037ab0e435732e63fdc2d5cc7 ""
   "d:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1761035246 3346135 39811c5673ad2a6fb94368d79d08ab36 ""
   "d:/texlive/2025/texmf.cnf" 1761034937 713 e69b156964470283e0530f5060668171 ""
-  "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783088232 64435 e1bcb4667cdf7b1fc94631e370be26a6 ""
+  "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783392090 64610 7fe8083a1499c9ba8bab4fb28ea5d791 ""
   "pdf_figures/fig3_10_threshold_curves.pdf" 1783083714 52572 6700d4a17ce56b00e2c87d6c9c5c5b57 ""
   "pdf_figures/fig3_11_gain_vs_fraction.pdf" 1783083714 28343 bd90dacf618f27ff003ef167eddd109a ""
   "pdf_figures/fig3_12_gain_efficiency.pdf" 1783083714 713129 2c95600655424af6ab171e96d4910181 ""
