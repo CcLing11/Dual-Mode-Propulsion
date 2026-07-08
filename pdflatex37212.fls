@@ -1,0 +1,5 @@
+PWD e:/Git克隆/Dual-Mode Propulsion
+INPUT d:/texlive/2025/texmf.cnf
+INPUT d:/texlive/2025/texmf-dist/web2c/texmf.cnf
+INPUT d:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex

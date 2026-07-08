@@ -1,4 +1,4 @@
-﻿\documentclass{IEEEtaes}
+\documentclass{IEEEtaes}
 
 \usepackage{color,array,amsthm}
 \usepackage{graphicx}
@@ -21,7 +21,7 @@
 
 \begin{document}
 
-\title{Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion}
+\title{Dual-Mode Propulsion for Asteroid Exploration: Fuel-Optimal Trajectory Design and Mode-Switching Analysis}
 
 \author{Haiyi Wang}
 \affil{National University of Defense Technology, Changsha, 410073, China}
@@ -36,23 +36,23 @@
 \corresp{Corresponding author: Xiang Guo.}
 \authoraddress{Haiyi Wang, PhD Student, College of Aerospace Science and Engineering; also State Key Laboratory of Space System Operation and Control, Changsha 410073, China (wanghaiyi@nudt.edu.cn).\\Xiang Guo, Lecturer, College of Aerospace Science and Engineering; also State Key Laboratory of Space System Operation and Control, Changsha 410073, China (gx9645@126.com).\\Zhen Yang, Professor, College of Aerospace Science and Engineering; also State Key Laboratory of Space System Operation and Control, Changsha 410073, China (yangzhen@nudt.edu.cn).\\Yazhong Luo, Professor, College of Aerospace Science and Engineering; also State Key Laboratory of Space System Operation and Control, Changsha 410073, China (luoyz@nudt.edu.cn).}
 \editor{}
-\supplementary{This work was supported in part by the U.S. Department of Commerce under Grant }
+\supplementary{This work was supported by the Natural Science Foundation of Hunan Province under Grant 2026JJ60127 and the Scientific Research Startup Project for Introduced High-Level Scientific and Technological Innovation Talents under Grant 202402-YJRC-XX-010.}
 
-\markboth{HAIYI WANG ET AL.}{DUAL-MODE PROPULSION ASTEROID TRANSFER}
+\markboth{HAIYI WANG ET AL.}{DUAL-MODE PROPULSION FOR ASTEROID EXPLORATION}
 \maketitle
 \nocite{*}
 
-\begin{abstract}This paper investigates fuel-optimal trajectory design and mode-switching behavior for asteroid-transfer missions using a single-thruster dual-mode propulsion system. The system provides two mutually exclusive operating modes: a low-thrust high-specific-impulse mode for propellant-efficient acceleration and a high-thrust low-specific-impulse mode for rapid local maneuvering. A fuel-optimal trajectory optimization model is formulated in modified equinoctial elements and solved within an indirect optimal-control framework. The optimal thrust direction, switching functions, Hamiltonian-based mode-selection rule, and two-point boundary-value problem are derived, and a hyperbolic-tangent smoothing homotopy is used to improve the convergence of the bang-bang control problem. An Earth-to-Ceres heliocentric transfer is taken as the numerical case. Four propulsion schemes, namely low-thrust-only, high-thrust-only, dual-mode with coasting, and dual-mode without coasting, are compared in terms of terminal mass and switching behavior. A two-dimensional parameter plane defined by the thrust ratio and the specific-impulse ratio is further introduced to identify the mass-gain boundary of the dual-mode scheme relative to the low-thrust baseline. Numerical results show that the dual-mode coasting scheme provides fuel benefits only under appropriate transfer-time constraints and propulsion-parameter combinations. The high-thrust low-specific-impulse mode is mainly activated on short critical arcs for trajectory reshaping, whereas the low-thrust high-specific-impulse mode dominates long-duration propulsion. As the transfer time increases, the high-thrust mode fraction decreases and the terminal mass increases. The parametric boundary analysis indicates that the fuel advantage is governed jointly by thrust enhancement and specific-impulse loss, with the specific-impulse ratio exerting a stronger influence on mass gain. These results provide guidance for mode design, propulsion-parameter matching, and mission analysis of dual-mode deep-space transfers.
+\begin{abstract}This paper investigates fuel-optimal trajectory design and mode-switching behavior for asteroid exploration using a single-thruster dual-mode propulsion system. The thruster operates in two mutually exclusive modes: a low-thrust high-specific-impulse mode for propellant-efficient acceleration and a high-thrust low-specific-impulse mode for rapid local maneuvering. Within an indirect optimal-control framework in modified equinoctial elements, the optimal thrust direction, switching functions, Hamiltonian-based mode-selection rule, and shooting equations are used to solve the fixed-time fuel-optimal problem. An Earth-to-Ceres heliocentric rendezvous is analyzed as the numerical case. Four schemes, namely low-thrust-only, high-thrust-only, dual-mode with coasting, and dual-mode without coasting, are compared, and a thrust-ratio--specific-impulse-ratio plane is introduced to characterize the mass-gain boundary relative to the low-thrust baseline. Results show that the dual-mode coasting scheme yields fuel benefits only for suitable transfer times and propulsion-parameter combinations. The high-thrust mode is concentrated on short trajectory-reshaping arcs, whereas the low-thrust mode dominates long-duration propulsion. The boundary analysis indicates that the fuel advantage is governed jointly by thrust enhancement and specific-impulse loss, with the latter exerting a stronger influence.
 \end{abstract}
 
-\begin{IEEEkeywords}Dual-mode propulsion, Fuel-optimal trajectory, Indirect method, Mode switching, Asteroid transfer, Continuous-thrust trajectory optimization
+\begin{IEEEkeywords}Dual-mode propulsion, Fuel-optimal trajectory, Indirect method, Mode switching, Asteroid exploration, Continuous-thrust trajectory optimization
 \end{IEEEkeywords}
 
 
 \section{Introduction}
 Deep-space exploration has become an important frontier in space science, resource utilization, and aerospace capability development. Current deep-space missions are gradually evolving from single flyby and imaging missions to long-duration residence, complex rendezvous, sample return, and multi-target exploration \cite{racca2003}. Accordingly, trajectory optimization has become a key basis for mission concept assessment, propulsion-system selection, and engineering implementation \cite{vasile2006}. Among various deep-space targets, asteroids and dwarf planets have both fundamental scientific value and potential engineering significance. Asteroids preserve information on the material composition and dynamical evolution of the early Solar System, and they are also relevant to planetary defense, in-situ resource utilization, and future deep-space infrastructure \cite{azadmanesh2023}.
 
-For heliocentric deep-space missions such as small-body rendezvous, sample return, and main-belt exploration, trajectory design is usually affected by long flight duration, large accumulated velocity increment, mission-window sensitivity, and strict propellant limitations. Rayman et al. \cite{rayman2006} showed that solar electric propulsion can support long-duration main-belt asteroid exploration missions. Dachwald et al. \cite{dachwald2008} further demonstrated that continuous-thrust propulsion can maintain high propellant efficiency over a relatively wide mission window in high-velocity-increment scenarios such as sample return. Therefore, long-duration heliocentric transfer missions are not only typical applications of continuous-thrust trajectory optimization, but also important problems for assessing the value of new propulsion-mode designs.
+For heliocentric deep-space missions such as small-body rendezvous, sample return, and main-belt exploration, trajectory design is usually affected by long flight duration, large accumulated velocity increment, mission-window sensitivity, and strict propellant limitations. Rayman et al. \cite{rayman2006} showed that solar electric propulsion can support long-duration main-belt asteroid exploration missions. Dachwald et al. \cite{dachwald2008} further demonstrated that continuous-thrust propulsion can maintain high propellant efficiency over a relatively wide mission window in high-velocity-increment scenarios such as sample return. Long-duration heliocentric transfers therefore provide representative test cases for continuous-thrust trajectory optimization and practical benchmarks for assessing new propulsion-mode designs.
 
 For these missions, continuous-thrust propulsion has become an important technical route for deep-space mission design because of its high specific impulse, high propellant utilization, and suitability for long-duration accumulation of velocity increment. Jiang et al. \cite{jiang2012} presented practical homotopic indirect techniques for fuel-optimal low-thrust problems, and Chi et al. \cite{chi2022} further investigated time-optimal and fuel-optimal indirect optimization with a gridded ion thruster model. Russell \cite{russell2007} carried out global low-thrust trade studies based on primer vector theory. The surveys by Morante et al. \cite{morante2021}, Betts \cite{betts1998}, Conway \cite{conway2012}, and Shirazi et al. \cite{shirazi2018} also indicate that low-thrust trajectory design has developed into a relatively systematic theoretical and numerical methodology.
 
@@ -82,7 +82,7 @@ f=e\cos(\Omega+\omega),\\
 g=e\sin(\Omega+\omega),\\
 h=\tan\left(\dfrac{i}{2}\right)\cos\Omega,\\
 k=\tan\left(\dfrac{i}{2}\right)\sin\Omega,\\
-L=\Omega+\omega+\nu 
+L=\Omega+\omega+\nu
 \end{cases}
 \end{equation}
 where $a$, $e$, $i$, $\Omega$, $\omega$, and $\nu$ denote the semimajor axis, eccentricity, inclination, right ascension of the ascending node, argument of periapsis, and true anomaly, respectively. Since the Ceres transfer is a long-duration heliocentric flight and the thrust acceleration is small relative to the central gravitational acceleration, the modified equinoctial-element dynamics can be written in a unified form consisting of a natural drift term and a control-affine term. This form facilitates the subsequent construction of the Hamiltonian and the derivation of the switching functions \cite{jiang2012,chi2022}.
@@ -103,30 +103,30 @@ where
 \resizebox{0.98\columnwidth}{!}{$\displaystyle
 \bm{M}(\bm{x})=\sqrt{\frac{p}{\mu}}
 \begin{bmatrix}
-0 & 2p/w & 0\\
-\sin L & \left[(w+1)\cos L+f\right]/w & -g(h\sin L-k\cos L)/w\\
--\cos L & \left[(w+1)\sin L+g\right]/w & f(h\sin L-k\cos L)/w\\
-0 & 0 & s^2\cos L/(2w)\\
-0 & 0 & s^2\sin L/(2w)\\
-0 & 0 & (h\sin L-k\cos L)/w
+0 & \dfrac{2p}{w} & 0\\
+\sin L & \dfrac{(w+1)\cos L+f}{w} & -\dfrac{g(h\sin L-k\cos L)}{w}\\
+-\cos L & \dfrac{(w+1)\sin L+g}{w} & \dfrac{f(h\sin L-k\cos L)}{w}\\
+0 & 0 & \dfrac{s^2\cos L}{2w}\\
+0 & 0 & \dfrac{s^2\sin L}{2w}\\
+0 & 0 & \dfrac{h\sin L-k\cos L}{w}
 \end{bmatrix}
 $}
 \end{equation}
 \begin{equation}
-\bm{D}(\bm{x})=\begin{bmatrix}0&0&0&0&0&\sqrt{\dfrac{\mu}{p^3}}w^2\end{bmatrix}^{\mathrm{T}},
+\bm{D}(\bm{x})=\begin{bmatrix}0&0&0&0&0&\sqrt{\dfrac{\mu}{p^3}}w^2\end{bmatrix}^{\mathrm{T}}
 \end{equation}
 \begin{equation}
-\begin{aligned}
-w&=1+f\cos L+g\sin L,\\
-s^2&=1+h^2+k^2,\\
-c_i&=I_{\mathrm{sp},i}g_0
-\end{aligned}
+\begin{cases}
+w=1+f\cos L+g\sin L\\
+s^2=1+h^2+k^2\\
+c_i=I_{\mathrm{sp},i}g_0
+\end{cases}
 \end{equation}
 where $T_i$ and $I_{\mathrm{sp},i}$ denote the thrust magnitude and specific impulse of mode $i$, respectively, and $g_0$ is the standard gravitational acceleration. The matrix $\bm{M}(\bm{x})$ is a $6\times3$ thrust-influence matrix assembled from Gauss' variational equations; its three columns correspond to radial, transverse, and normal thrust accelerations. The vector $\bm{D}(\bm{x})$ denotes the drift of the modified equinoctial elements under thrust-free heliocentric two-body motion. In this model, only the true longitude $L$ has an explicit drift term, while the remaining modified equinoctial elements remain constant in the absence of thrust.
 
 The present study considers a heliocentric fuel-optimal rendezvous problem with a given departure time and transfer time. Let the modified equinoctial elements of Earth and Ceres at the corresponding epochs be $\bm{x}_{\mathrm{E}}(t_0)$ and $\bm{x}_{\mathrm{C}}(t_{\mathrm{f}})$, respectively. The boundary conditions can then be written as
 \begin{equation}
-\bm{x}(t_0)=\bm{x}_{\mathrm{E}}(t_0),\qquad m(t_0)=m_0,\qquad \bm{x}(t_{\mathrm{f}})=\bm{x}_{\mathrm{C}}(t_{\mathrm{f}}),
+\bm{x}(t_0)=\bm{x}_{\mathrm{E}}(t_0),\qquad m(t_0)=m_0,\qquad \bm{x}(t_{\mathrm{f}})=\bm{x}_{\mathrm{C}}(t_{\mathrm{f}})
 \end{equation}
 \begin{equation}
 t_{\mathrm{f}}=t_0+t_{\mathrm{tr}}
@@ -155,7 +155,7 @@ H_{\alpha}=\frac{T_1\delta_1+T_2\delta_2}{m}\left(\bm{M}^{\mathrm{T}}\bm{\lambda
 \end{equation}
 Because $\bm{\alpha}$ is a unit vector, for a given throttle and state costate, the optimization problem is equivalent to minimizing $\left(\bm{M}^{\mathrm{T}}\bm{\lambda}_x\right)^{\mathrm{T}}\bm{\alpha}$ subject to the constraint $\|\bm{\alpha}\|=1$. According to the Cauchy-Schwarz inequality,
 \begin{equation}
-\left(\bm{M}^{\mathrm{T}}\bm{\lambda}_x\right)^{\mathrm{T}}\bm{\alpha}\geq-\left\|\bm{M}^{\mathrm{T}}\bm{\lambda}_x\right\|,
+\left(\bm{M}^{\mathrm{T}}\bm{\lambda}_x\right)^{\mathrm{T}}\bm{\alpha}\geq-\left\|\bm{M}^{\mathrm{T}}\bm{\lambda}_x\right\|
 \end{equation}
 and equality holds when $\bm{\alpha}$ and $\bm{M}^{\mathrm{T}}\bm{\lambda}_x$ are oppositely collinear. Therefore, the optimal thrust direction satisfies
 \begin{equation}
@@ -165,7 +165,7 @@ This result is consistent with the primer-vector opposite-direction law in the s
 
 After substituting the optimal direction into the Hamiltonian, the switching functions corresponding to the two modes can be obtained. After this substitution, the direction variable is eliminated, and the terms in the Hamiltonian associated with $\delta_i$ can be rearranged as
 \begin{equation}
-H=\bm{\lambda}_x^{\mathrm{T}}\bm{D}(\bm{x})-\delta_1S_1-\delta_2S_2,
+H=\bm{\lambda}_x^{\mathrm{T}}\bm{D}(\bm{x})-\delta_1S_1-\delta_2S_2
 \end{equation}
 where $S_i$ is the switching-function coefficient of mode $i$. With the sign convention used here, a positive $S_i$ means that activating mode $i$ decreases the Hamiltonian and is therefore favorable. One obtains
 \begin{equation}
@@ -175,13 +175,13 @@ The switching function therefore couples the thrust magnitude, specific impulse,
 
 Strict bang-off-bang control makes the right-hand side of the dynamics discontinuous near switching points and increases the initial-guess sensitivity of the shooting solution. To improve numerical conditioning, a hyperbolic-tangent smoothing homotopy is adopted, and the throttle of each mode is written as
 \begin{equation}
-\delta_i=\frac{1}{2}\left[1+\tanh\left(\frac{S_i}{\varepsilon}\right)\right],\qquad i=1,2,
+\delta_i=\frac{1}{2}\left[1+\tanh\left(\frac{S_i}{\varepsilon}\right)\right],\qquad i=1,2
 \end{equation}
 \begin{equation}
 \delta_i^{*}=\begin{cases}
 1, & S_i>0,\\
 0, & S_i<0,
-\end{cases}\qquad i=1,2,
+\end{cases}\qquad i=1,2
 \end{equation}
 where $\varepsilon$ is the homotopy parameter. During the solution process, $\varepsilon$ is gradually continued from a relatively large smoothing value to a value close to zero to approximate the original nonsmooth fuel-optimal control. For relatively large $\varepsilon$, the control law is smooth and the shooting problem is better conditioned. As $\varepsilon$ is decreased, the smoothed control approaches the ideal bang-off-bang structure.
 
@@ -200,7 +200,7 @@ For a dual-mode system sharing a single thruster, the independent throttles abov
 \end{equation}
 where
 \begin{equation}
-H_1=\bm{\lambda}_x^{\mathrm{T}}\left[\frac{T_1\delta_1}{m}\bm{M}(\bm{x})\bm{\alpha}^{*}+\bm{D}(\bm{x})\right]+(1-\lambda_m)\frac{T_1}{c_1}\delta_1,
+H_1=\bm{\lambda}_x^{\mathrm{T}}\left[\frac{T_1\delta_1}{m}\bm{M}(\bm{x})\bm{\alpha}^{*}+\bm{D}(\bm{x})\right]+(1-\lambda_m)\frac{T_1}{c_1}\delta_1
 \end{equation}
 \begin{equation}
 H_2=\bm{\lambda}_x^{\mathrm{T}}\left[\frac{T_2\delta_2}{m}\bm{M}(\bm{x})\bm{\alpha}^{*}+\bm{D}(\bm{x})\right]+(1-\lambda_m)\frac{T_2}{c_2}\delta_2
@@ -240,7 +240,7 @@ For a given $\bm{z}$, the state equations, mass equation, costate equations, and
 where $\bm{x}_{\mathrm{f}}(t_{\mathrm{f}})$ denotes the modified equinoctial elements of the target body at the arrival epoch. Solving this equation gives the initial costates that satisfy the endpoint constraints and the terminal transversality condition, completing the two-point boundary-value formulation.
 
 \subsection{Four Propulsion Schemes and Two-Dimensional Critical Boundary Definition}
-To systematically analyze the mechanism of dual-mode propulsion in the Earth-to-Ceres fuel-optimal transfer, the following four propulsion schemes are considered. Within the unified optimal-control framework, the differences among the four schemes do not appear in the state equations or boundary conditions, but in the admissible set of control variables. In other words, the four schemes can be regarded as special cases of the same fuel-optimal problem under different control constraints. By comparing these special cases under the same initial mass, boundary conditions, and transfer time, the effects of the number of modes, the availability of coasting, and the matching of mode parameters on propellant consumption can be identified more clearly.
+To systematically analyze the mechanism of dual-mode propulsion in the Earth-to-Ceres fuel-optimal transfer, the following four propulsion schemes are considered. Within the unified optimal-control framework, the differences among the four schemes do not appear in the state equations or boundary conditions, but in the admissible set of control variables. In other words, the four schemes can be regarded as special cases of the same fuel-optimal problem under different control constraints. Comparing these special cases under the same initial mass, boundary conditions, and transfer time isolates the effects of mode availability, coasting freedom, and propulsion-parameter matching on propellant consumption.
 
 (1) Low-thrust-only scheme: only mode 1 is retained, with $\delta_2\equiv0$, and the switching function of mode 1 determines the thrust-coast switching. This scheme corresponds to a high-specific-impulse low-thrust single-mode continuous-thrust fuel-optimal transfer. It is a limiting case of the dual-mode model and serves as the baseline for evaluating whether dual-mode propulsion provides a net fuel benefit.
 \begin{equation}
@@ -284,20 +284,20 @@ When the mass gain is greater than zero, introducing mode 2 and coasting freedom
 
 Accordingly, the dual-mode advantage region and the equivalent boundary can be defined as
 \begin{equation}
-\Omega_{+}=\left\{(r_{\mathrm{T}},r_{\mathrm{I}})\mid \Delta m_{\mathrm{f}}(r_{\mathrm{T}},r_{\mathrm{I}})>0\right\},
+\Omega_{+}=\left\{(r_{\mathrm{T}},r_{\mathrm{I}})\mid \Delta m_{\mathrm{f}}(r_{\mathrm{T}},r_{\mathrm{I}})>0\right\}
 \end{equation}
 \begin{equation}
-\Omega_{0}=\left\{(r_{\mathrm{T}},r_{\mathrm{I}})\mid \Delta m_{\mathrm{f}}(r_{\mathrm{T}},r_{\mathrm{I}})=0\right\},
+\Omega_{0}=\left\{(r_{\mathrm{T}},r_{\mathrm{I}})\mid \Delta m_{\mathrm{f}}(r_{\mathrm{T}},r_{\mathrm{I}})=0\right\}
 \end{equation}
-where the equivalent boundary is the two-dimensional critical boundary used in this paper. Considering convergence errors in practical indirect-method solutions and discretization errors in parameter sampling, a small mass-gain threshold may be used in subsequent simulation plots to approximate the zero-gain boundary, namely
+where $\Omega_{0}$ is the two-dimensional critical boundary considered here. Considering convergence errors in practical indirect-method solutions and discretization errors in parameter sampling, a small mass-gain threshold may be used in subsequent simulation plots to approximate the zero-gain boundary, namely
 \begin{equation}
-B_{\varepsilon}=\left\{(r_{\mathrm{T}},r_{\mathrm{I}})\mid \Delta m_{\mathrm{f}}(r_{\mathrm{T}},r_{\mathrm{I}})=b\right\},
+B_{\varepsilon}=\left\{(r_{\mathrm{T}},r_{\mathrm{I}})\mid \Delta m_{\mathrm{f}}(r_{\mathrm{T}},r_{\mathrm{I}})=b\right\}
 \end{equation}
 where the mass-gain threshold $b$ can be selected as a small positive value such as 0.1 kg or 1 kg to improve the identifiability of the boundary line in heat maps. By solving the fuel-optimal dual-mode coasting problem on a grid in the thrust-ratio--specific-impulse-ratio plane and comparing each result with the low-thrust-only baseline terminal mass, the mass gain, zero-gain boundary, and gain-threshold curves can be obtained. This two-dimensional critical boundary can simultaneously reflect the coupled influence of thrust enhancement and specific-impulse reduction on the effectiveness of dual-mode propulsion. It is therefore suitable for describing mode-switching behavior and fuel-benefit distributions of dual-mode propulsion.
 
 \section{Simulation Results and Analysis}
 
-To verify the applicability of the dual-mode propulsion indirect method to fuel-optimal asteroid-transfer design, the simulation study is organized at three levels. First, typical transfer trajectories under different transfer-time parameters are used to examine the correspondence between automatic mode selection and orbital-element evolution. Second, under the same mission background, the fuel performance of four schemes, namely low-thrust-only, high-thrust-only, dual-mode with coasting, and dual-mode without coasting, is compared. Third, in the two-dimensional parameter plane formed by the thrust ratio and the specific-impulse ratio, the advantage boundary of the dual-mode scheme relative to the low-thrust-only baseline is characterized. This organization connects the control structure of individual optimal trajectories with parameter-level design criteria for propulsion selection.
+To verify the applicability of dual-mode propulsion to fuel-optimal asteroid exploration trajectory optimization, the simulation study is organized at three levels. First, typical transfer trajectories under different transfer-time parameters are used to examine the correspondence between automatic mode selection and orbital-element evolution. Second, under the same mission background, the fuel performance of four schemes, namely low-thrust-only, high-thrust-only, dual-mode with coasting, and dual-mode without coasting, is compared. Third, in the two-dimensional parameter plane formed by the thrust ratio and the specific-impulse ratio, the advantage boundary of the dual-mode scheme relative to the low-thrust-only baseline is characterized. This organization connects the control structure of individual optimal trajectories with parameter-level design criteria for propulsion selection.
 
 \begin{table*}[!t]
 \caption{Basic parameters and boundary conditions of the simulation case}
@@ -347,7 +347,7 @@ The time parameter for typical trajectories is denoted by $\alpha_t$, which maps
 \caption{Dual-mode coasting transfer trajectories under different $\alpha_t$.}
 \label{fig:trajectory-3d}
 \end{figure}
-The corresponding planar projections in the heliocentric $x$-$y$ plane are further shown in Fig.~\ref{fig:trajectory-xy-cases}, where the local high-thrust arcs and switching points can be observed more clearly for each transfer-time parameter.
+The corresponding planar projections in the heliocentric $x$-$y$ plane are shown in Fig.~\ref{fig:trajectory-xy-cases}, which makes the local high-thrust arcs and switching points easier to identify for each transfer-time parameter.
 
 \begin{figure*}[!t]
 \centering
@@ -411,19 +411,19 @@ The mode-time fractions provide a more direct fuel-mechanism interpretation. At 
 \renewcommand{\thefigure}{\arabic{figure}}
 \renewcommand{\theHfigure}{\arabic{figure}}
 
-The orbital-element histories clarify the dynamical causes of mode switching. In Figs.~\ref{fig:elements-aei} and \ref{fig:elements-angles}, the light-blue shading denotes intervals in which mode 1, the low-thrust high-specific-impulse mode, is active; the light-orange shading denotes intervals in which mode 2, the high-thrust low-specific-impulse mode, is active; and unshaded narrow bands denote coasting arcs. The high-thrust background usually corresponds to intervals of rapid semimajor-axis increase or eccentricity adjustment, whereas the coasting arcs mostly appear when the orbital elements vary slowly or when phase matching is required. The inclination changes gradually over the transfer, indicating that the trajectory requires not only energy increase but also continuous plane correction. The high-thrust mode can accelerate local element variations, but because of its low-specific-impulse penalty, the optimal solution does not use it for long durations. The low-thrust high-specific-impulse mode therefore undertakes most of the energy accumulation and plane-adjustment task.
+The orbital-element histories clarify the dynamical causes of mode switching. In Figs.~\ref{fig:elements-aei} and \ref{fig:elements-angles}, the light-blue shading denotes intervals in which mode 1, the low-thrust high-specific-impulse mode, is active; the light-orange shading denotes intervals in which mode 2, the high-thrust low-specific-impulse mode, is active; and unshaded narrow bands denote coasting arcs. The high-thrust shaded intervals usually correspond to rapid semimajor-axis growth or eccentricity adjustment, whereas the coasting arcs mostly appear when the orbital elements vary slowly or when phase matching is required. The gradual inclination variation indicates that the trajectory requires energy increase together with continuous plane correction. The high-thrust mode can accelerate local element variations, but because of its low-specific-impulse penalty, the optimal solution does not use it for long durations. The low-thrust high-specific-impulse mode therefore undertakes most of the energy accumulation and plane-adjustment task.
 
 \subsection{Fuel-Performance Comparison of the Four Propulsion Schemes}
-The comparison of the four schemes is not only used to compare terminal mass, but also to separate the effects of propulsion operating point and control freedom on fuel performance. The low-thrust-only and high-thrust-only schemes provide performance boundaries for single operating points, whereas the dual-mode coasting and dual-mode noncoasting schemes further examine the effects of mutually exclusive mode selection and coasting freedom. The terminal mass as $\alpha_t$ varies is shown in Fig.~\ref{fig:remaining-mass}, and representative data are listed in Table~\ref{tab:four-schemes}. Fig.~\ref{fig:remaining-mass} shows that the high-thrust-only curve remains at the lowest level, the dual-mode coasting curve is close to or slightly higher than the low-thrust-only curve in the medium-to-long time region, and the dual-mode noncoasting curve drops sharply when $\alpha_t>1$. Although the high-thrust-only scheme has stronger acceleration capability, its low specific impulse makes its overall fuel performance much worse than schemes dominated by the low-thrust high-specific-impulse mode. Its terminal mass remains low, indicating that high thrust without sufficient specific impulse is difficult to translate into fuel advantage in long-duration deep-space transfers. The low-thrust-only scheme can obtain a high terminal mass when enough time is available, and in the interval $\alpha_t=1.00$--1.20 it nearly overlaps the dual-mode coasting scheme. This means that within this time range, the high-specific-impulse low-thrust mode can already complete the main transfer task independently, although its feasibility and rapid maneuvering capability remain limited under tighter time constraints.
+The comparison of the four schemes separates the effects of propulsion operating point and control freedom on fuel performance, rather than serving only as a terminal-mass comparison. The low-thrust-only and high-thrust-only schemes provide performance boundaries for single operating points, whereas the dual-mode coasting and dual-mode noncoasting schemes further examine the effects of mutually exclusive mode selection and coasting freedom. The terminal mass as $\alpha_t$ varies is shown in Fig.~\ref{fig:remaining-mass}, and representative data are listed in Table~\ref{tab:four-schemes}. Fig.~\ref{fig:remaining-mass} shows that the high-thrust-only curve remains at the lowest level, the dual-mode coasting curve is close to or slightly higher than the low-thrust-only curve in the medium-to-long time region, and the dual-mode noncoasting curve drops sharply when $\alpha_t>1$. Although the high-thrust-only scheme has stronger acceleration capability, its low specific impulse makes its overall fuel performance much worse than schemes dominated by the low-thrust high-specific-impulse mode. Its terminal mass remains low, indicating that high thrust without sufficient specific impulse is difficult to translate into fuel advantage in long-duration deep-space transfers. The low-thrust-only scheme can obtain a high terminal mass when enough time is available, and in the interval $\alpha_t=1.00$--1.20 it nearly overlaps the dual-mode coasting scheme. This means that within this time range, the high-specific-impulse low-thrust mode can already complete the main transfer task independently, although its feasibility and rapid maneuvering capability remain limited under tighter time constraints.
 
 \begin{table*}[!t]
-\caption{Representative terminal masses of the four schemes, kg (optimal revolution number in parentheses)}
+\caption{Representative terminal masses of the four schemes (optimal revolution number in parentheses)}
 \label{tab:four-schemes}
 \centering
 \footnotesize
 \begin{tabular}{ccccc}
 \toprule
-$\alpha_t$ & Low-thrust only & High-thrust only & Dual-mode with coasting & Dual-mode without coasting \\
+$\alpha_t$ & Low-thrust only/kg & High-thrust only/kg & Dual-mode with coasting/kg & Dual-mode without coasting/kg \\
 \midrule
 0.60 & -- & 550.4(1) & 1098.3(1) & 1040.4(1) \\
 0.75 & -- & 553.7(1) & 1100.5(1) & 1012.6(2) \\
@@ -456,9 +456,9 @@ $\alpha_t$ & Low-thrust only & High-thrust only & Dual-mode with coasting & Dual
 \label{fig:gain-noncoast}
 \end{figure}
 
-The dual-mode coasting scheme nearly overlaps the low-thrust-only scheme in the interval $\alpha_t=1.00$--1.20. At $\alpha_t=1.00$, its terminal-mass gain relative to the low-thrust-only scheme is about 1.822 kg, whereas at $\alpha_t=1.10$ and $\alpha_t=1.20$ the terminal masses of the two schemes listed in Table~\ref{tab:four-schemes} are identical. This overlap indicates that when the transfer time approaches or exceeds the all-low-thrust time-optimal baseline, mode 1 can independently complete the main energy accumulation and phase adjustment. The high-thrust low-specific-impulse mode no longer provides an obvious net benefit, and the dual-mode coasting optimum automatically degenerates into a solution dominated by the low-thrust mode. In contrast, the dual-mode noncoasting curve exhibits a distinct jump after $\alpha_t>1$ because this scheme enforces thrust over the entire transfer and cannot use the extra time for natural drift and phase waiting. Table~\ref{tab:four-schemes} also shows that its optimal revolution number switches from two revolutions to one revolution, changing the control structure and orbital winding pattern. Therefore, the terminal mass decreases discontinuously, indicating that coasting freedom is decisive for the fuel-optimal solution in long time windows.
+The dual-mode coasting scheme nearly overlaps the low-thrust-only scheme in the interval $\alpha_t=1.00$--1.20. At $\alpha_t=1.00$, its terminal-mass gain relative to the low-thrust-only scheme is about 1.822 kg, whereas at $\alpha_t=1.10$ and $\alpha_t=1.20$ the terminal masses of the two schemes listed in Table~\ref{tab:four-schemes} are identical. This overlap indicates that when the transfer time approaches or exceeds the all-low-thrust time-optimal baseline, mode 1 can independently complete the main energy accumulation and phase adjustment. The high-thrust low-specific-impulse mode no longer provides a clear net benefit, and the dual-mode coasting optimum automatically degenerates into a solution dominated by the low-thrust mode. In contrast, the dual-mode noncoasting curve exhibits a distinct jump after $\alpha_t>1$ because this scheme enforces thrust over the entire transfer and cannot use the extra time for natural drift and phase waiting. Table~\ref{tab:four-schemes} also shows that its optimal revolution number switches from two revolutions to one revolution, changing the control structure and orbital winding pattern. The discontinuous terminal-mass decrease indicates that coasting freedom is decisive for the fuel-optimal solution in long time windows.
 
-Coasting freedom has a pronounced influence on the fixed-time fuel-optimal problem. At $\alpha_t=1.20$, the terminal mass of the dual-mode coasting scheme is 1451.641 kg, whereas that of the dual-mode noncoasting scheme is only 904.694 kg. Although the latter also has two thrust modes, it consumes unnecessary propellant in long-duration transfer because thrust must be applied throughout the trajectory. This result shows that the advantage of dual-mode propulsion comes not only from adding one more mode, but also from allowing the optimal control to freely choose among thrusting, coasting, and different modes.
+Coasting freedom has a pronounced influence on the fixed-time fuel-optimal problem. At $\alpha_t=1.20$, the terminal mass of the dual-mode coasting scheme is 1451.641 kg, whereas that of the dual-mode noncoasting scheme is only 904.694 kg. Although the latter also has two thrust modes, it consumes unnecessary propellant in long-duration transfer because thrust must be applied throughout the trajectory. This result indicates that the advantage of dual-mode propulsion is tied to the combined choice among thrusting, coasting, and operating mode, rather than merely to the presence of an additional mode.
 
 \begin{figure}[!hbp]
 \centering
@@ -488,7 +488,7 @@ The continuously interpolated mass-gain $\Delta m_{\mathrm{f}}$ distribution sho
 \label{fig:threshold-curves}
 \end{figure}
 
-The mass-gain-threshold $B_{\varepsilon}$ curves further transform the two-dimensional results into propulsion-parameter selection criteria. For a small gain on the order of 1 kg, increasing the thrust ratio can clearly reduce the required specific-impulse ratio. For gains greater than 10 kg, the curves shrink noticeably toward the high-specific-impulse-ratio region, indicating that large benefits require not only high thrust capability but also a sufficiently high specific impulse in the high-thrust mode. The parameter region satisfying a mass gain no smaller than $\Delta m_{\mathrm{f}}=1~\mathrm{kg}$ accounts for about 57.17\%, the region satisfying no smaller than $\Delta m_{\mathrm{f}}=5~\mathrm{kg}$ accounts for about 18.99\%, and the region satisfying no smaller than $\Delta m_{\mathrm{f}}=10~\mathrm{kg}$ accounts for only about 3.68\%. Therefore, a high-benefit dual-mode scheme does not rely simply on high thrust, but on the combined satisfaction of high thrust and acceptable specific-impulse loss.
+The mass-gain-threshold $B_{\varepsilon}$ curves further transform the two-dimensional results into propulsion-parameter selection criteria. For a small gain on the order of 1 kg, increasing the thrust ratio reduces the required specific-impulse ratio. For gains greater than 10 kg, the curves shrink noticeably toward the high-specific-impulse-ratio region, indicating that large benefits require not only high thrust capability but also a sufficiently high specific impulse in the high-thrust mode. The parameter region satisfying a mass gain no smaller than $\Delta m_{\mathrm{f}}=1~\mathrm{kg}$ accounts for about 57.17\%, the region satisfying no smaller than $\Delta m_{\mathrm{f}}=5~\mathrm{kg}$ accounts for about 18.99\%, and the region satisfying no smaller than $\Delta m_{\mathrm{f}}=10~\mathrm{kg}$ accounts for only about 3.68\%. A high-benefit dual-mode scheme therefore requires high thrust together with an acceptable specific-impulse penalty.
 
 \begin{figure}[!t]
 \centering
@@ -508,11 +508,11 @@ From the perspective of mode usage, the non-low-thrust mode fraction $\rho$ and 
 
 The preceding correlation analysis does not distinguish parameter combinations that obtain mass gain through relatively long non-low-thrust arcs from those that achieve comparable benefit with limited non-low-thrust usage. To quantify this effect, the mass-gain efficiency per unit non-low-thrust mode fraction is defined as
 \begin{equation}
-\eta_m=\frac{\Delta m_{\mathrm{f}}}{\rho},
+\eta_m=\frac{\Delta m_{\mathrm{f}}}{\rho}
 \end{equation}
 where the non-low-thrust mode fraction is
 \begin{equation}
-\rho=\frac{t_{\mathrm{c}}+t_2}{t_{\mathrm{tr}}},
+\rho=\frac{t_{\mathrm{c}}+t_2}{t_{\mathrm{tr}}}
 \end{equation}
 with $t_{\mathrm{c}}$ denoting the coasting time and $t_2$ denoting the high-thrust-mode operation time. The gain-efficiency plot measures how much terminal-mass benefit is obtained per unit non-low-thrust mode fraction under limited high-thrust or coasting usage. The high-efficiency region usually lies near the advantage boundary rather than in the upper-right region where the absolute gain is largest. For engineering selection, this implies that when the high-thrust mode is constrained by thermal control, power, or lifetime, parameter combinations near the boundary may be preferable to the maximum-gain point because they retain a measurable fuel benefit with a lower high-thrust usage fraction.
 
@@ -521,24 +521,14 @@ Combining the two-dimensional gain distribution, threshold curves, and efficienc
 \section{Conclusions}
 An indirect trajectory-optimization model was established for the Earth-to-Ceres fuel-optimal transfer using a single thruster with two operating modes. Typical trajectories, scheme comparisons, and propulsion-parameter boundaries were systematically analyzed through numerical simulations. The results show that the optimal control structure of the dual-mode coasting trajectory has a clear bang-off-bang characteristic. The high-specific-impulse low-thrust mode undertakes the main long-duration propulsion task, the high-thrust low-specific-impulse mode is concentrated in local arcs for rapid reconstruction of orbital energy and shape, and coasting arcs are used for phase waiting and for avoiding unnecessary propellant consumption.
 
-The comparison among the four schemes indicates that the advantage of dual-mode propulsion cannot be simply interpreted as having more operating modes. In a fixed-time fuel-optimal problem, coasting freedom is as important as mode switching. If the dual-mode system is forced to operate throughout the transfer, the additional mode may instead cause significant fuel loss during long-duration transfers. For the baseline propulsion parameters considered in this paper, the dual-mode coasting scheme has a clear advantage over the high-thrust-only scheme, whereas its benefit relative to the low-thrust-only scheme is small and concentrated in specific time windows. Thus, the value of dual-mode propulsion depends jointly on the mission time constraint and propulsion-parameter matching.
+The comparison among the four schemes indicates that the advantage of dual-mode propulsion should not be interpreted solely as having more operating modes. In a fixed-time fuel-optimal problem, coasting freedom is as important as mode switching. If the dual-mode system is forced to operate throughout the transfer, the additional mode may instead cause significant fuel loss during long-duration transfers. For the baseline propulsion parameters considered in this paper, the dual-mode coasting scheme has a clear advantage over the high-thrust-only scheme, whereas its benefit relative to the low-thrust-only scheme is small and concentrated in specific time windows. Thus, the value of dual-mode propulsion depends jointly on the mission time constraint and propulsion-parameter matching.
 
 The analysis in the thrust-ratio-specific-impulse-ratio plane provides a critical boundary with clearer engineering interpretation. Compared with a single composite critical parameter, the two-dimensional boundary directly reveals the compensation relation between thrust enhancement and specific-impulse penalty: increasing the thrust ratio can reduce the specific-impulse ratio required for positive gain, but large fuel benefits still require the high-thrust mode to maintain a sufficiently high specific impulse. The analyses of mode fraction and mass-gain efficiency further show that the optimal benefit comes from the synergy among short high-thrust maneuvers, coasting for phase waiting, and high-specific-impulse continuous propulsion, rather than from a monotonic increase in high-thrust-mode operation time.
 
-The main value of this work is to translate dual-mode optimal-control solutions into performance maps that can support mission design and preliminary propulsion-parameter selection. Although the theoretical framework builds on existing indirect-method and dual-mode optimal-control techniques, the asteroid-transfer case clarifies how control freedom, the transfer-time parameter $\alpha_t$, and propulsion-parameter combinations jointly shape fuel performance. These results provide a simulation basis for subsequent dual-mode deep-space trajectory optimization and parameter-sensitivity analysis. Future work may incorporate higher-fidelity ephemeris models, engine operating constraints, and more robust homotopy strategies, especially near complex boundary regions and in multi-target or multiple-small-body transfer missions.
+The main value of this work is to translate dual-mode optimal-control solutions into performance maps that can support mission design and preliminary propulsion-parameter selection. Although the theoretical framework builds on existing indirect-method and dual-mode optimal-control techniques, the asteroid exploration case clarifies how control freedom, the transfer-time parameter $\alpha_t$, and propulsion-parameter combinations jointly shape fuel performance. These results provide a simulation basis for subsequent dual-mode deep-space trajectory optimization and parameter-sensitivity analysis. Future work may incorporate higher-fidelity ephemeris models, engine operating constraints, and more robust homotopy strategies, especially near complex boundary regions and in multi-target or multiple-small-body transfer missions.
 
 
 \bibliographystyle{IEEEtaes}
 \bibliography{dualmode_refs}
 
 \end{document}
-
-
-
-
-
-
-
-
-
-

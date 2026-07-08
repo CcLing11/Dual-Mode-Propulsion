@@ -1,17 +1,17 @@
 # Fdb version 4
-["bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"] 1783392246.59685 "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783392249.87565 0
+["bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"] 1783515483.8023 "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783516737.48479 0
   "./IEEEtaes.bst" 1783083713 59902 bcd815dd2f4c44fdd8e6ec030db5c34b ""
-  "./dualmode_refs.bib" 1783083713 16608 178fa35114807084ea5f4b062e6bef50 ""
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783392248 9944 4664b93156b78aaedbe1ab201fae06e3 "pdflatex"
+  "./dualmode_refs.bib" 1783514403 15496 0df8bce5731ec2cd1d69a6bcecf03499 ""
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783516736 10283 d279aa2a0cea23224d2b89766164e461 "pdflatex"
   (generated)
   "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl"
   "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.blg"
   (rewritten before read)
-["pdflatex"] 1783392247.12498 "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.pdf" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783392249.87638 0
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783392248 9944 4664b93156b78aaedbe1ab201fae06e3 "pdflatex"
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" 1783392247 13045 782d05a19f3a4a181c99abc76f35b9fa "bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.out" 1783392248 2821 336427949566da3c383df696474040c4 "pdflatex"
-  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783392090 64610 7fe8083a1499c9ba8bab4fb28ea5d791 ""
+["pdflatex"] 1783516734.93106 "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.pdf" "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion" 1783516737.48548 0
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.aux" 1783516736 10283 d279aa2a0cea23224d2b89766164e461 "pdflatex"
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.bbl" 1783515484 12381 4a304d1ef4d1725ee0cf748b7d784c4c "bibtex Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion"
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.out" 1783516736 2767 cef9d22bd28c22a3745f9a10208bcb0a "pdflatex"
+  "Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783516734 65061 df75987d89fe342009a88c546318b774 ""
   "IEEEtaes.cls" 1783083713 217562 b25384c0a278e4bcd189df9d9606e2fb ""
   "d:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1761032477 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1761032697 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -49,6 +49,9 @@
   "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1761032193 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1761032193 1116 933a60c408fc0a863a92debe84b2d294 ""
   "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1761032193 1120 8b7d695260f3cff42e636090a8002094 ""
+  "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1761032193 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti7.tfm" 1761032193 1492 86331993fe614793f5e7e755835c31c5 ""
+  "d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1761032193 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1761031834 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1761031834 30251 6afa5cb1d0204815a708a080681d4674 ""
   "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1761031834 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -65,6 +68,7 @@
   "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1761031834 32587 65067f817f408bc71a7312f3d9828a9b ""
   "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1761031834 32716 08e384dc442464e7285e891af9f45947 ""
   "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1761031834 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
+  "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1761031834 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb" 1761031834 35479 2cca68718f15872e7cce1a8f6033b99b ""
   "d:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb" 1761032858 44648 23115b2a545ebfe2c526c3ca99db8b95 ""
   "d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1761034552 44729 fea0975e20ec51c992338362f05f1146 ""
@@ -102,7 +106,6 @@
   "d:/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty" 1761033128 2963 d8ec5a1b4e0a106c5c737900202763e4 ""
   "d:/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1761033128 2378 14b657ee5031da98cf91648f19642694 ""
   "d:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty" 1761032071 6078 f1cb470c9199e7110a27851508ed7a5c ""
-  "d:/texlive/2025/texmf-dist/tex/latex/cite/cite.sty" 1761032176 26218 19edeff8cdc2bcb704e8051dc55eb5a7 ""
   "d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1761032549 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "d:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1761032574 46850 d87daedc2abdc653769a6f1067849fe0 ""
   "d:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1761032807 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -138,7 +141,7 @@
   "d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1761034963 5512713 e2e6a6c037ab0e435732e63fdc2d5cc7 ""
   "d:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1761035246 3346135 39811c5673ad2a6fb94368d79d08ab36 ""
   "d:/texlive/2025/texmf.cnf" 1761034937 713 e69b156964470283e0530f5060668171 ""
-  "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783392090 64610 7fe8083a1499c9ba8bab4fb28ea5d791 ""
+  "e:/Git克隆/Dual-Mode Propulsion/Fuel-Optimal Trajectory Design and Mode-Switching Analysis for Asteroid Exploration Using Dual-Mode Propulsion.tex" 1783516734 65061 df75987d89fe342009a88c546318b774 ""
   "pdf_figures/fig3_10_threshold_curves.pdf" 1783083714 52572 6700d4a17ce56b00e2c87d6c9c5c5b57 ""
   "pdf_figures/fig3_11_gain_vs_fraction.pdf" 1783083714 28343 bd90dacf618f27ff003ef167eddd109a ""
   "pdf_figures/fig3_12_gain_efficiency.pdf" 1783083714 713129 2c95600655424af6ab171e96d4910181 ""
